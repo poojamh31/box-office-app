@@ -11,6 +11,8 @@ const apiGet = async queryString => {
 
 export const searchForShows = query => apiGet(`/search/shows?q=${query}`);
 
+export const searchForPeople = query => apiGet(`/search/people?q=${query}`);
+
 //const response = await fetch(
 //   `https://api.tvmaze.com/search/shows?q=${searchStr}`
 // );
