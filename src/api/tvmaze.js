@@ -13,7 +13,8 @@ export const searchForShows = query => apiGet(`/search/shows?q=${query}`);
 
 export const searchForPeople = query => apiGet(`/search/people?q=${query}`);
 
-export const getShowByID = showId => apiGet(`/shows/${showId}`);
+export const getShowByID = showId =>
+  apiGet(`/shows/${showId}?embed[]=seasons&embed[]=cast`);
 
 //const response = await fetch(
 //   `https://api.tvmaze.com/search/shows?q=${searchStr}`
